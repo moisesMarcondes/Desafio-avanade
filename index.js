@@ -4,12 +4,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
-//DECLARANDO AS LISTAS
+// LISTAS
 var listaCurso = [];
 
 var listaProfessor = [];
 
-//FUNÇÃO DE BUSCA (GET)
+// (GET)
 
 function getCurso(req, res) {
     res.send(listaCurso);
@@ -39,7 +39,7 @@ function getProfessorById(req, res) {
     }
 }
 
-//FUNÇÃO DE CADASTRO (POST)
+// (POST)
 function criandoCurso(req, res) {
     const curso = req.body;
     const cursoPesquisado = listaCurso.find((cursoNaLista) => cursoNaLista.idCurso === curso.idCurso);
@@ -63,7 +63,7 @@ function criandoProfessor(req, res) {
     }
 }
 
-//FUNÇÃO DE ATUALIZAÇÃO (PUT)
+// (PUT)
 function updateCurso(req, res) {
     const cursoId = req.params.idCurso;
     const curso = req.body;
@@ -92,7 +92,7 @@ function updateProfessor(req, res) {
     }
 }
 
-//FUNÇÃO DE DELETE (DEL)
+// (DEL)
 function deleteCurso(req, res) {
     const cursoId = req.params.idCurso;
     listaCurso = listaCurso.filter((curso) => curso.idCurso != cursoId);
