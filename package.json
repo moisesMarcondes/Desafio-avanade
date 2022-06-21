@@ -9,14 +9,14 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/efpv/cursoAvanade.git"
+      "url": "git+https://github.com/moisesMarcondes/Desafio-avanade.git"
     },
     "author": "Erick Vieira",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/efpv/cursoAvanade/issues"
+      "url": "https://github.com/moisesMarcondes/Desafio-avanade/issues"
     },
-    "homepage": "https://github.com/efpv/cursoAvanade#readme",
+    "homepage": "https://github.com/moisesMarcondes/Desafio-avanade#readme",
     "dependencies": {
       "express": "^4.18.1"
     }
